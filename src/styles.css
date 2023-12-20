@@ -1,0 +1,20 @@
+:root {
+  --color-white: #ffffff;
+  --color-blue: #2f69fe;
+  --color-grey: #9999a3;
+  --color-black: #000118;
+  --color-blue-opaque: #2f6afe61;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #191919;
+}
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 95vh;
+  text-align: center;
+  font-family: sans-serif;
+}

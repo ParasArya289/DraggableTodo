@@ -1,0 +1,85 @@
+.todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: var(--color-white);
+}
+.todo__header {
+  position: relative;
+}
+.todo__header > img {
+  width: 100%;
+  border-radius: 30px;
+}
+.todo__header > h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--color-blue-opaque);
+  text-transform: uppercase;
+  transform: translate(-50%, -100%);
+}
+.todo__wrapper {
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: left;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 200px;
+}
+.todo__item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.15);
+  padding-block: 10px;
+  color: var(--color-black);
+  font-weight: 300;
+  font-size: smaller;
+}
+.todo__wrapper_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+  accent-color: var(--color-blue);
+}
+h2 {
+  font-size: medium;
+  color: var(--color-black);
+}
+p {
+  color: var(--color-grey);
+  font-size: small;
+}
+.todo__item svg {
+  color: var(--color-grey);
+}
+.todo__add_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--color-blue);
+  padding: 15px;
+  color: var(--color-white);
+  font-size: smaller;
+  cursor: pointer;
+}
+.todo__wrapper .completed {
+  text-decoration: line-through;
+  color: var(--color-grey);
+}
